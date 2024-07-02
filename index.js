@@ -3,6 +3,7 @@ let maiorNota = 0
 let menorNota = notas[0]
 let acima = 0
 let baixo = 0
+
 function notamaior(){
     for (let i = 0; i < notas.length; i++) {
         if (notas[i] > maiorNota) {
@@ -12,7 +13,6 @@ function notamaior(){
     }
     return maiorNota
 }
-
 console.log("maior " + notamaior())
 
 
@@ -21,11 +21,9 @@ function notamenor(){
         if (notas[i] < menorNota) {
             menorNota = notas[i]
         }
-
     }
     return menorNota
 }
-
 console.log("menor " + notamenor())
 
 
@@ -48,6 +46,5 @@ function reprovado(baixo){
     }
 return baixo
 }
-
 console.log("reprovado " + reprovado (baixo) )
 
