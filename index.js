@@ -4,12 +4,22 @@ let menorNota = notas[0]
 let acima = 0
 let baixo = 0
 
+function media(){
+    let soma = 0 
+    for (let i = 0; i < notas.length; i++) {
+        soma += notas[i]
+}
+return soma / notas.length;
+}
+
+
 function notamaior(){
 for (let i = 0; i < notas.length; i++) {
 if (notas[i] > maiorNota) {
 maiorNota = notas[i]
 }
 }
+
 return maiorNota
 }
 console.log("maior " + notamaior())
@@ -21,6 +31,7 @@ if (notas[i] < menorNota) {
 menorNota = notas[i]
 }
 }
+
 return menorNota
 }
 console.log("menor " + notamenor())
@@ -32,6 +43,7 @@ if(notas[i] >= 6) {
 acima++
 }
 }
+
 return acima
 }
 console.log("aprovado " + aprovado(acima) )
@@ -43,6 +55,7 @@ if(notas[i] < 6) {
 baixo++
 }
 }
+
 return baixo
 }
 console.log("reprovado " + reprovado (baixo) )
