@@ -5,33 +5,32 @@ let acima = 0
 let baixo = 0
 
 function notamaior(){
-    for (let i = 0; i < notas.length; i++) {
-        if (notas[i] > maiorNota) {
-            maiorNota = notas[i]
-        }
-
-    }
-    return maiorNota
+for (let i = 0; i < notas.length; i++) {
+if (notas[i] > maiorNota) {
+maiorNota = notas[i]
+}
+}
+return maiorNota
 }
 console.log("maior " + notamaior())
 
 
 function notamenor(){
-    for (let i = 0; i < notas.length; i++) {
-        if (notas[i] < menorNota) {
-            menorNota = notas[i]
-        }
-    }
-    return menorNota
+for (let i = 0; i < notas.length; i++) {
+if (notas[i] < menorNota) {
+menorNota = notas[i]
+}
+}
+return menorNota
 }
 console.log("menor " + notamenor())
 
 
 function aprovado(acima){
-    for (let i = 0; i < notas.length; i++) {
-    if(notas[i] >= 6) {
-        acima++
-    }
+for (let i = 0; i < notas.length; i++) {
+if(notas[i] >= 6) {
+acima++
+}
 }
 return acima
 }
@@ -39,11 +38,11 @@ console.log("aprovado " + aprovado(acima) )
 
 
 function reprovado(baixo){
-    for (let i = 0; i < notas.length; i++) {
-    if(notas[i] < 6) {
-        baixo++
+for (let i = 0; i < notas.length; i++) {
+if(notas[i] < 6) {
+baixo++
 }
-    }
+}
 return baixo
 }
 console.log("reprovado " + reprovado (baixo) )
